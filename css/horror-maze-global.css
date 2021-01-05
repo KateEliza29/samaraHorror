@@ -1,0 +1,208 @@
+
+/*Main Page Styling*/
+body {
+    background:black;
+    box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font: 2.5rem 'knife_fight_balletregular';
+    color: white;
+    text-shadow: 3px 3px gray;
+}
+
+h3 {
+    color: white;
+    font: 1.8rem 'cf_night_of_terror_personalRg';
+}
+
+h4 {
+    color: white;
+    font-family: 'cf_night_of_terror_personalRg';
+    font-size: 4rem;
+    text-shadow: 5px 5px rgb(46, 46, 46);
+}
+
+h5 {
+    font: bold 1.8rem 'Caveat';
+    text-shadow: 1px 1px gray;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.flex {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid; 
+    grid-gap: 10px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+/* Nav Bar Styling */ 
+.nav-image {
+    width: 6vw;
+    padding: 10px;
+}
+
+.dropdown-menu:hover .dropdown-contents {
+    display: block;
+}
+
+.dropdown-contents {
+    display: none;
+    background: black;
+    padding: 5px;
+}
+
+.dropdown-link {
+    color: white; 
+    font-family: 'the_night_creatures_2regular';
+    font-size: 1.3rem;
+}
+
+.dropdown-link:hover {
+    color: red;
+}
+
+#navBar {
+    position: fixed;
+    background-color: black;
+}
+
+#navBar h3:hover {
+    color: #c70039;
+}
+
+#navBar h3:active {
+    transform: scale(0.9);
+}    
+
+#innerNav {
+    flex-direction: column;
+    height: 600px;
+}
+
+/*Banners*/
+
+
+#bannerMessage h2:hover {
+    color: gray;
+    text-shadow: 5px 5px black;
+}
+
+#bannerMessage:active {
+    transform: scale(0.9);
+}
+
+
+/*Buttons and Other Page Functions*/
+.button {
+    border: white 2px solid;
+    font-family: 'cf_night_of_terror_personalRg';
+    padding: 10px;
+    font-size: 2rem;
+    background: linear-gradient(45deg, red, purple);
+    text-shadow: 2px 2px white;
+    transition-property: background, opacity; 
+    opacity: 0.6;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, purple, red);
+    opacity: 1;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+
+/* Footer */
+.footer-icon {
+    width: 40px;
+    margin: 10px;
+}
+
+#footer {
+    border-top: 5px gray solid;
+    flex-direction: row;
+}
+
+#footer a {
+    font-family: 'the_night_creatures_2regular';
+    font-size: 2rem;
+    color: white;
+    opacity:0.5;
+}
+
+#footer a:hover {
+    opacity: 1;
+}
+
+#footer a:active {
+    transform: scale(0.9);
+}
+
+#leftFooter {
+    flex-direction: row;
+}
+
+#rightFooter {
+    flex-direction: row;
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 890px) {
+    
+    /* Nav Bar Styling */ 
+    .dropdown-menu:active .dropdown-contents {
+        display: block;
+    }
+
+    .dropdown-menu:hover .dropdown-contents {
+        position: absolute;
+        top: 50px;
+    } 
+
+    .dropdown-contents {
+        position: absolute;
+    }
+
+    #navBar {
+        position: fixed;
+        width: 100%;
+        grid-row:1/2;
+        height: 60px;
+        z-index: 1;
+    }
+
+    #innerNav {
+        flex-direction: row;
+        height: 60px;
+    }
+
+    #rightFooter {
+        font-size: 1rem;
+    }
+
+    #innerNav {
+        font-size: 1rem;
+        padding: 1px;
+    }
+
+}
+
+
+

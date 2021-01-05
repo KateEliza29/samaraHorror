@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="include/fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/FAQ.css">
+    <link rel="stylesheet" href="css/horror-maze-global.css">
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+
+    <title>Samara FAQ</title>
+</head>
+<body onload= "setPage()">
+    
+    <div id="grid">
+        <div id="navBar">
+            <div id="innerNav" class="flex">
+            <img class="nav-image" src="include/icons/wolf.svg">
+                <a class= "nav-link" href="index.html"><h3>Home</h3></a>
+                
+                <div class="dropdown-menu">
+                    <a class= "nav-link" href="#"><h3>Mazes</h3></a>
+                    <div class= "dropdown-contents">
+                        <a href="purge.html" class="dropdown-link">The Purge</a>
+                        <a href="infirmary.html" class="dropdown-link">The Infirmary</a>
+                        <a href="woods.html" class="dropdown-link">The Woods</a>
+                    </div>
+                </div>
+                <a href="#"><h3>Tickets</h3></a>
+                <a href="FAQ.html"><h3>FAQ</h3></a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <div id="bannerMessage">
+                <a href="#"><h2>Live Actors -- Animatronics -- Scare Bar</h2></a>
+            </div>
+        </div>
+
+        <div id="divider1"></div>
+
+        <div id="FAQ">
+            <h4>Questions</h4>
+
+            <button id="0" class="accordion" onclick="hideShow(this)">What time do I need to arrive?</button>
+            <div id="answer0" class="panel">
+                <p>You will need to arrive about 15 minutes before your timeslot, to ensure that you have 
+                plenty of time to check in. If you miss your timeslot, it is unlikely that we will be 
+                able to fit you in at another, and we do not offer refunds. </p>
+            </div>
+
+            <button id="1" class="accordion" onclick="hideShow(this)">Can I wear a costume?</button>
+            <div id= "answer1" class="panel">
+                <p>No. For safety, we need to be able to distinguish between Creatures and guests. 
+                Our marshalls will refuse entry to anybody wearing, or believed to be carrying a costume. </p>
+            </div>
+
+            <button id= "2" class="accordion" onclick="hideShow(this)">Will the Creatures touch me?</button>
+            <div id= "answer2" class="panel">
+                <p>Yes. We simply provide a home for our Creatures, we do not pretend to have control over their actions.</p>
+            </div>
+
+            <button id="3" class="accordion" onclick="hideShow(this)">Can I bring food and drink with me?</button>
+            <div id="answer3" class="panel">
+                <p>We do not allow guests to bring their own food and drinks on site. There are, however, food outlets
+                onsite, including our (in)famous Scare Bar, with a live feed from our mazes. </p>
+            </div>
+
+            <button id="4" class="accordion" onclick="hideShow(this)">What should I wear?</button>
+            <div id= "answer4" class="panel">
+                <p>The Purge and The Infirmary take place indoors, but The Woods takes place in the woods. Our mazes are
+                designed to make you uncomfortable, so expect uneven floors, tight (and low-ceilinged) tunnels, muddy walks
+                through the woods, and obstacles to clamber over, amongst other treats. We recommend warm clothing for the
+                woods and sturdy footwear for running from the Creatures. Please do not wear your best clothes, or heels. You
+                are not Bryce Dallas Howard in Jurassic World.</p>
+            </div>
+
+            <button id= "5" class="accordion" onclick="hideShow(this)">Can I bring children?</button>
+            <div id= "answer5" class="panel">
+                <p>No. In previous years, we have allowed children to enter our mazes, and, unfortunately they did not all return. 
+                It is now known to us that some of the Creatures in our woods are cannibals, and child-flesh is a delicacy. This is 
+                an adults only attraction due to the nature of the event, and no-one under the age of 16 will be admitted. </p>
+            </div>
+
+            <button id="6" class="accordion" onclick="hideShow(this)">Do I have to go through the mazes?</button>
+            <div id="answer6" class="panel">
+                <p>We have spectator tickets available for the weak. These tickets allow you entry to our Scare Bar, and our fairground
+                rides, but not the mazes. On entry, you will be given a wristband. The colour of the wristband relates to the type of
+                ticket you have bought. These wristbands will be checked by our marshalls prior to maze entry. Although Creatures have been 
+                instructed to not harm guests, Samara organisers are not legally liable for anything that happens to those 
+                attempting to sneak in without paying.</p>
+            </div>
+
+            <button id="7" class="accordion" onclick="hideShow(this)">How long is each maze?</button>
+            <div id= "answer7" class="panel">
+                <p>Each maze is between 15 and 20 minutes long. You will be able to book timeslots for each maze when you book your ticket. 
+                To ensure that the event runs smoothly, please stick to these timings. If you miss your timeslot, it is unlikely that we will
+                be able to accommodate you in another.  </p>
+            </div>
+
+            <button id= "8" class="accordion" onclick="hideShow(this)">Can I take photographs?</button>
+            <div id= "answer8" class="panel">
+                <p>You may take photographs and videos in the Scare Bar and main area. However, the Creatures we house in our mazes do not 
+                react well to mobile devices, or flash photography. Anybody caught taking photographs or filming in our mazes will be ejected
+                from the event. 
+                </p>
+            </div>
+        </div>
+
+        <div id="divider2"></div>
+
+            <div id="contactFormWrapper">
+                <div id="contactForm">
+                    <form id="contactForm1" action="javascript:void(0);">
+                        <fieldset>
+                            <legend><h2>Contact Samara</h2></legend>	
+                            <label>Name </label><input name="name" class="textInput" type="text" placeholder="Freddy Krueger"><br><br>
+                            <label>Email </label><input name="email" class="textInput" type="email" placeholder="nightmare@elmstreet.com"><br><br>
+                            <label>Message</label><input name="message" class="textInput longTextInput" type="textarea" placeholder="Dear Creatures..."><br><br>
+                            
+                            <input type="submit" name="submit" class="button" id="submitButton">
+                        
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <div id="divider3"></div>
+
+            <div id="location">
+                <div id="locationInfo">
+                    <h2>Location</h2>
+                    <p>Find us at <strong>Howl Moor</strong>, Scarborough</p>
+                </div>
+                <div id="locationMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18594.778976017802!2d-0.7597122291452604!3d54.368512693347505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487f21623ee8876d%3A0xdbaedc2d33c61aa1!2sHowl%20Moor%20Dike!5e0!3m2!1sen!2suk!4v1586888118743!5m2!1sen!2suk" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+                </div>
+            </div>
+
+
+        <div id="footer" class="flex">
+            <div id="leftFooter" class="flex">
+                <div><a href="https://twitter.com/ItsKateThyme"><img class="footer-icon" src="include/icons/twitterIcon.svg"></a></div>
+                <div><a href="https://github.com/KateEliza29"><img class="footer-icon" src="include/icons/gitHubIcon.svg"></a></div>
+                <div><a href="mailto: katebrown2901@gmail.com"><img class="footer-icon" src="include/icons/emailIcon.svg"></a></div>
+                <div><a href="https://www.linkedin.com/in/kate-brown-22a16869/"><img class="footer-icon" src="include/icons/linkedinIcon.svg"></a></div>
+            </div>    
+            <div id="rightFooter" class="flex">    
+                <div><a href="http://kateeliza.co.uk">kateeliza.co.uk</a></div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script type="text/javascript">
+        
+        function setPage() {
+           for (let i=0; i<9; i++) {
+                document.getElementById("answer" + i).style.display = "none";
+           }
+        }
+
+        function hideShow(elem) {
+            let answerId = "answer" + elem.id;
+            let questionId = elem.id;
+            if (document.getElementById(answerId).style.display == "none") {
+                document.getElementById(answerId).style.display = "block";
+                document.getElementById(questionId).style.backgroundColor = "red";
+            }
+            else {
+                document.getElementById(answerId).style.display = "none";
+                document.getElementById(questionId).style.backgroundColor = "black";
+            }
+        }
+
+        document.getElementById("submitButton").onclick = function() {
+            alert("Thank you for your interest, but this is a fictional website project. To contact Kate Eliza, please use the contact form on kateeliza.co.uk")
+        }
+
+    </script>
+
+
+</body>
+</html>
