@@ -14,7 +14,7 @@
 #banner {
     grid-column: 2/7;
     grid-row: 1/2;
-    background: url("headerImage.png") center / cover no-repeat fixed;
+    background: url("/include/images/headerImage.png") center / cover no-repeat fixed;
 }
 
 #logo {
@@ -102,7 +102,7 @@
 #about {
     grid-column: 2/7;
     grid-row: 3/4;
-    background: url("board.png") center / 80% no-repeat; 
+    background: url("/include/images/board.png") center / 80% no-repeat; 
     height: 100vh;
 }
 
@@ -250,7 +250,7 @@
     }
 
     #about {
-        background: url("board.png") center / 100% no-repeat;
+        background: url("include/images/board.png") center / 100% no-repeat;
     }
 }
 
@@ -284,7 +284,7 @@
     #about {
         grid-column: 1/6;
         grid-row: 4/5;
-        background: url("board.png") center top / 80% no-repeat; 
+        background: url("include/images/board.png") center top / 80% no-repeat; 
         height: 50vh;
     }
 
