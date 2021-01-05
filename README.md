@@ -22,4 +22,4 @@ Looking back on this project, there are many improvements that I would make, if 
 
 
 ## Screenshot
-![A screenshot of the Samara Horror home page](/samaraHorror.jpg)
+![A screenshot of the Samara Horror home page](/samaraHorror.png)
